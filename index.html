@@ -130,115 +130,356 @@
 </section>
 
 <div class="mockup-wrap">
-  <div class="mockup-frame">
+
+  <!-- MOCKUP 1: Wyceny / Panel główny -->
+  <div class="mockup-frame" style="margin-bottom:2rem;">
     <div class="mockup-bar">
       <div class="mockup-dot"></div><div class="mockup-dot"></div><div class="mockup-dot"></div>
+      <span style="font-size:10px;color:var(--ink3);margin-left:10px;font-family:'DM Sans',sans-serif;">asystentdekoracji.pl</span>
     </div>
-    <div style="background:#f0f4f6;border-radius:12px;border:1px solid var(--border);overflow:hidden;">
-      <!-- APP MOCKUP -->
-      <div style="display:flex;flex-direction:column;min-height:420px;font-family:'DM Sans',sans-serif;border-radius:12px;overflow:hidden;border:1px solid #dde5e8;">
+    <div style="background:#eef2f5;border-radius:12px;overflow:hidden;font-family:'DM Sans',sans-serif;">
 
-        <!-- Topbar -->
-        <div style="background:linear-gradient(135deg,#1c2b32 0%,#2a3f4a 100%);padding:10px 16px;display:flex;align-items:center;justify-content:space-between;">
-          <span style="font-family:'Cormorant Garamond',serif;font-size:14px;font-weight:700;color:#ccd9de;letter-spacing:0.04em;">Asystent Dekoracji</span>
-          <span style="font-size:10px;color:#8aa0ac;background:rgba(132,156,166,0.15);padding:3px 9px;border-radius:20px;">Porter Design</span>
+      <!-- Topbar -->
+      <div style="background:rgba(255,255,255,0.7);backdrop-filter:blur(20px);border-bottom:1.5px solid rgba(255,255,255,0.72);padding:10px 18px;display:flex;align-items:center;justify-content:space-between;">
+        <div style="display:flex;align-items:center;gap:8px;">
+          <span style="font-size:14px;">⠿</span>
+          <span style="font-size:11px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:#4a6070;">PORTER DESIGN</span>
         </div>
+        <div style="display:flex;gap:8px;align-items:center;">
+          <div style="background:#dcfce7;border:1.5px solid #86efac;border-radius:20px;padding:4px 12px;font-size:10px;font-weight:700;color:#16a34a;display:flex;align-items:center;gap:5px;">
+            <span style="width:7px;height:7px;border-radius:50%;background:#22c55e;display:inline-block;"></span>ONLINE
+          </div>
+          <div style="background:rgba(124,58,237,0.1);border:1.5px solid rgba(124,58,237,0.25);border-radius:10px;padding:5px 11px;font-size:10px;font-weight:700;color:#7c3aed;">🤖 AI</div>
+          <div style="border:1.5px solid #dde5e8;border-radius:10px;padding:5px 11px;font-size:10px;color:#4a6070;">Wyloguj</div>
+        </div>
+      </div>
 
-        <!-- Tab nav — jak w apce -->
-        <div style="background:rgba(248,250,251,0.95);padding:6px 10px;display:flex;gap:3px;border-bottom:1px solid #e8eef1;">
-          <div style="padding:7px 12px;border-radius:10px;background:white;color:#7c3aed;font-size:11px;font-weight:700;box-shadow:0 2px 8px rgba(124,58,237,0.12);display:flex;flex-direction:column;align-items:center;gap:2px;">
-            <span style="font-size:14px;">📋</span><span>Wyceny</span>
+      <!-- Nav tabs -->
+      <div style="background:rgba(255,255,255,0.48);backdrop-filter:blur(20px);border-bottom:1px solid rgba(255,255,255,0.72);padding:5px 10px;display:flex;gap:3px;">
+        <div style="padding:8px 14px;border-radius:12px;background:white;box-shadow:0 2px 10px rgba(124,58,237,0.13);display:flex;flex-direction:column;align-items:center;gap:2px;min-width:60px;">
+          <span style="font-size:15px;">📋</span>
+          <span style="font-size:10px;font-weight:700;color:#7c3aed;">Wyceny</span>
+        </div>
+        <div style="padding:8px 14px;border-radius:12px;display:flex;flex-direction:column;align-items:center;gap:2px;min-width:60px;">
+          <span style="font-size:15px;">📈</span>
+          <span style="font-size:10px;color:#8aa0ac;">CRM</span>
+        </div>
+        <div style="padding:8px 14px;border-radius:12px;display:flex;flex-direction:column;align-items:center;gap:2px;min-width:60px;">
+          <span style="font-size:15px;">📅</span>
+          <span style="font-size:10px;color:#8aa0ac;">Kalen.</span>
+        </div>
+        <div style="padding:8px 14px;border-radius:12px;display:flex;flex-direction:column;align-items:center;gap:2px;min-width:60px;">
+          <span style="font-size:15px;">✉</span>
+          <span style="font-size:10px;color:#8aa0ac;">Mail</span>
+        </div>
+        <div style="padding:8px 14px;border-radius:12px;display:flex;flex-direction:column;align-items:center;gap:2px;min-width:60px;">
+          <span style="font-size:15px;">✓</span>
+          <span style="font-size:10px;color:#8aa0ac;">Zadania</span>
+        </div>
+        <div style="padding:8px 14px;border-radius:12px;display:flex;flex-direction:column;align-items:center;gap:2px;min-width:60px;">
+          <span style="font-size:15px;">💰</span>
+          <span style="font-size:10px;color:#8aa0ac;">Faktury</span>
+        </div>
+        <div style="padding:8px 14px;border-radius:12px;display:flex;flex-direction:column;align-items:center;gap:2px;min-width:60px;">
+          <span style="font-size:15px;">📦</span>
+          <span style="font-size:10px;color:#8aa0ac;">Magazyn</span>
+        </div>
+      </div>
+
+      <!-- Hero dashboard card -->
+      <div style="margin:14px;border-radius:16px;background:linear-gradient(135deg,#1c2b32 0%,#2d4a5a 50%,#1a3a4a 100%);padding:20px 22px;color:white;">
+        <div style="font-size:10px;letter-spacing:0.1em;text-transform:uppercase;color:#8aa0ac;margin-bottom:4px;">Piątek, 26 czerwca 2026</div>
+        <div style="font-size:22px;font-weight:800;font-family:'Cormorant Garamond',serif;margin-bottom:3px;">Porter Design</div>
+        <div style="font-size:11px;color:#8aa0ac;margin-bottom:14px;">Panel sprzedaży i wycen</div>
+        <div style="display:flex;gap:10px;flex-wrap:wrap;">
+          <div style="background:rgba(255,255,255,0.1);border-radius:12px;padding:10px 16px;">
+            <div style="font-size:9px;letter-spacing:0.1em;text-transform:uppercase;color:#8aa0ac;margin-bottom:3px;">Łączna wartość</div>
+            <div style="font-size:18px;font-weight:800;">734 890 zł</div>
           </div>
-          <div style="padding:7px 12px;border-radius:10px;color:#8aa0ac;font-size:11px;font-weight:400;display:flex;flex-direction:column;align-items:center;gap:2px;">
-            <span style="font-size:14px;">📈</span><span>CRM</span>
+          <div style="background:rgba(255,255,255,0.1);border-radius:12px;padding:10px 16px;">
+            <div style="font-size:9px;letter-spacing:0.1em;text-transform:uppercase;color:#8aa0ac;margin-bottom:3px;">Aktywne</div>
+            <div style="font-size:18px;font-weight:800;color:#67e8f9;">47 klientów</div>
           </div>
-          <div style="padding:7px 12px;border-radius:10px;color:#8aa0ac;font-size:11px;font-weight:400;display:flex;flex-direction:column;align-items:center;gap:2px;">
-            <span style="font-size:14px;">📅</span><span>Kalen.</span>
-          </div>
-          <div style="padding:7px 12px;border-radius:10px;color:#8aa0ac;font-size:11px;font-weight:400;display:flex;flex-direction:column;align-items:center;gap:2px;">
-            <span style="font-size:14px;">✉</span><span>Mail</span>
-          </div>
-          <div style="padding:7px 12px;border-radius:10px;color:#8aa0ac;font-size:11px;font-weight:400;display:flex;flex-direction:column;align-items:center;gap:2px;">
-            <span style="font-size:14px;">✓</span><span>Zadania</span>
-          </div>
-          <div style="padding:7px 12px;border-radius:10px;color:#8aa0ac;font-size:11px;font-weight:400;display:flex;flex-direction:column;align-items:center;gap:2px;">
-            <span style="font-size:14px;">💰</span><span>Faktury</span>
-          </div>
-          <div style="padding:7px 12px;border-radius:10px;color:#8aa0ac;font-size:11px;font-weight:400;display:flex;flex-direction:column;align-items:center;gap:2px;">
-            <span style="font-size:14px;">📦</span><span>Magazyn</span>
+          <div style="background:rgba(255,255,255,0.1);border-radius:12px;padding:10px 16px;">
+            <div style="font-size:9px;letter-spacing:0.1em;text-transform:uppercase;color:#8aa0ac;margin-bottom:3px;">Zrealizowane</div>
+            <div style="font-size:18px;font-weight:800;color:#86efac;">12 klientów</div>
           </div>
         </div>
+      </div>
 
-        <!-- Main content: lista wycen -->
-        <div style="background:white;flex:1;padding:14px 16px;">
+      <!-- Searchbar + button -->
+      <div style="margin:0 14px 10px;display:flex;gap:10px;align-items:center;">
+        <div style="flex:1;background:white;border:1px solid #dde5e8;border-radius:10px;padding:10px 14px;font-size:11px;color:#8aa0ac;">Szukaj klienta — imię, adres, telefon...</div>
+        <div style="background:#7c3aed;color:white;border-radius:10px;padding:10px 16px;font-size:11px;font-weight:600;white-space:nowrap;">+ Nowy klient</div>
+      </div>
 
-          <!-- Header wycen -->
-          <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:12px;">
-            <div>
-              <div style="font-size:15px;font-weight:700;color:#1c2b32;font-family:'Cormorant Garamond',serif;">Wyceny</div>
-              <div style="font-size:10px;color:#8aa0ac;margin-top:1px;">3 aktywne · łącznie 42 580 zł</div>
-            </div>
-            <div style="padding:7px 14px;border-radius:9px;background:#1c2b32;color:white;font-size:11px;font-weight:600;">+ Nowa wycena</div>
+      <!-- Klienci -->
+      <div style="margin:0 14px 14px;display:flex;flex-direction:column;gap:6px;">
+        <div style="background:white;border:1px solid #dde5e8;border-radius:11px;padding:11px 14px;display:flex;align-items:center;gap:10px;">
+          <div style="width:34px;height:34px;border-radius:50%;background:linear-gradient(135deg,#c4b5fd,#a78bfa);display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;color:#4c1d95;flex-shrink:0;">JK</div>
+          <div style="flex:1;">
+            <div style="font-size:12px;font-weight:600;color:#1c2b32;">Jan Kowalski</div>
+            <div style="font-size:10px;color:#8aa0ac;">ul. Kwiatowa 12, Warszawa</div>
           </div>
-
-          <!-- Karta wyceny 1 -->
-          <div style="border:1px solid #e8eef1;border-radius:11px;padding:12px 14px;margin-bottom:8px;background:#f9fbfc;">
-            <div style="display:flex;justify-content:space-between;align-items:flex-start;">
-              <div>
-                <div style="font-size:12.5px;font-weight:600;color:#1c2b32;">Anna Kowalska</div>
-                <div style="font-size:10.5px;color:#8aa0ac;margin-top:2px;">Salon + sypialnia · zasłony lniane, roleta rzymska</div>
-                <div style="display:flex;gap:5px;margin-top:6px;flex-wrap:wrap;">
-                  <span style="font-size:9.5px;background:#e8f4f0;color:#2d7a5f;padding:2px 8px;border-radius:20px;font-weight:600;">oferta wysłana</span>
-                  <span style="font-size:9.5px;background:#f0f4f6;color:#5d7a87;padding:2px 8px;border-radius:20px;">2 pokoje · 4 okna</span>
-                </div>
-              </div>
-              <div style="text-align:right;flex-shrink:0;margin-left:12px;">
-                <div style="font-size:15px;font-weight:700;color:#5d7a87;font-family:'Cormorant Garamond',serif;">8 640 zł</div>
-                <div style="font-size:9.5px;color:#8aa0ac;">brutto</div>
-              </div>
-            </div>
+          <span style="font-size:9.5px;background:#ede9fe;color:#6d28d9;padding:2px 9px;border-radius:20px;font-weight:600;">AKTYWNE</span>
+          <span style="font-size:12px;font-weight:700;color:#1c2b32;">8 640 zł</span>
+        </div>
+        <div style="background:white;border:1px solid #dde5e8;border-radius:11px;padding:11px 14px;display:flex;align-items:center;gap:10px;">
+          <div style="width:34px;height:34px;border-radius:50%;background:linear-gradient(135deg,#c4b5fd,#a78bfa);display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;color:#4c1d95;flex-shrink:0;">AN</div>
+          <div style="flex:1;">
+            <div style="font-size:12px;font-weight:600;color:#1c2b32;">Anna Nowak</div>
+            <div style="font-size:10px;color:#8aa0ac;">ul. Lipowa 3, Kraków</div>
           </div>
-
-          <!-- Karta wyceny 2 -->
-          <div style="border:1px solid #e8eef1;border-radius:11px;padding:12px 14px;margin-bottom:8px;">
-            <div style="display:flex;justify-content:space-between;align-items:flex-start;">
-              <div>
-                <div style="font-size:12.5px;font-weight:600;color:#1c2b32;">Studio Wnętrz Nowak</div>
-                <div style="font-size:10.5px;color:#8aa0ac;margin-top:2px;">Apartament · karnisze elektryczne, zasłony velvet</div>
-                <div style="display:flex;gap:5px;margin-top:6px;">
-                  <span style="font-size:9.5px;background:#fff7e6;color:#b07d2e;padding:2px 8px;border-radius:20px;font-weight:600;">w realizacji</span>
-                  <span style="font-size:9.5px;background:#f0f4f6;color:#5d7a87;padding:2px 8px;border-radius:20px;">5 pokoi · 11 okien</span>
-                </div>
-              </div>
-              <div style="text-align:right;flex-shrink:0;margin-left:12px;">
-                <div style="font-size:15px;font-weight:700;color:#5d7a87;font-family:'Cormorant Garamond',serif;">24 180 zł</div>
-                <div style="font-size:9.5px;color:#8aa0ac;">brutto</div>
-              </div>
-            </div>
+          <span style="font-size:9.5px;background:#ede9fe;color:#6d28d9;padding:2px 9px;border-radius:20px;font-weight:600;">AKTYWNE</span>
+          <span style="font-size:12px;font-weight:700;color:#1c2b32;">24 180 zł</span>
+        </div>
+        <div style="background:white;border:1px solid #dde5e8;border-radius:11px;padding:11px 14px;display:flex;align-items:center;gap:10px;">
+          <div style="width:34px;height:34px;border-radius:50%;background:linear-gradient(135deg,#c4b5fd,#a78bfa);display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;color:#4c1d95;flex-shrink:0;">MW</div>
+          <div style="flex:1;">
+            <div style="font-size:12px;font-weight:600;color:#1c2b32;">Marek Wiśniewski</div>
+            <div style="font-size:10px;color:#8aa0ac;">ul. Różana 7, Wrocław</div>
           </div>
-
-          <!-- Karta wyceny 3 -->
-          <div style="border:1px solid #e8eef1;border-radius:11px;padding:12px 14px;">
-            <div style="display:flex;justify-content:space-between;align-items:flex-start;">
-              <div>
-                <div style="font-size:12.5px;font-weight:600;color:#1c2b32;">Marta Wiśniewska</div>
-                <div style="font-size:10.5px;color:#8aa0ac;margin-top:2px;">Dom jednorodzinny · rolety zaciemniające, firanki</div>
-                <div style="display:flex;gap:5px;margin-top:6px;">
-                  <span style="font-size:9.5px;background:#f0f4f6;color:#5d7a87;padding:2px 8px;border-radius:20px;font-weight:600;">w przygotowaniu</span>
-                  <span style="font-size:9.5px;background:#f0f4f6;color:#5d7a87;padding:2px 8px;border-radius:20px;">3 pokoje · 6 okien</span>
-                </div>
-              </div>
-              <div style="text-align:right;flex-shrink:0;margin-left:12px;">
-                <div style="font-size:15px;font-weight:700;color:#5d7a87;font-family:'Cormorant Garamond',serif;">9 760 zł</div>
-                <div style="font-size:9.5px;color:#8aa0ac;">brutto</div>
-              </div>
-            </div>
-          </div>
-
+          <span style="font-size:9.5px;background:#ede9fe;color:#6d28d9;padding:2px 9px;border-radius:20px;font-weight:600;">AKTYWNE</span>
+          <span style="font-size:12px;font-weight:700;color:#1c2b32;">9 760 zł</span>
         </div>
       </div>
     </div>
   </div>
+
+  <!-- MOCKUP 2: CRM Kanban -->
+  <div class="mockup-frame" style="margin-bottom:2rem;">
+    <div class="mockup-bar">
+      <div class="mockup-dot"></div><div class="mockup-dot"></div><div class="mockup-dot"></div>
+      <span style="font-size:10px;color:var(--ink3);margin-left:10px;font-family:'DM Sans',sans-serif;">CRM — tablica kanban</span>
+    </div>
+    <div style="background:#eef2f5;border-radius:12px;overflow:hidden;font-family:'DM Sans',sans-serif;padding:14px;">
+
+      <!-- Kanban columns -->
+      <div style="display:grid;grid-template-columns:repeat(5,1fr);gap:8px;margin-bottom:10px;">
+
+        <!-- ZAPYTANIE -->
+        <div style="background:rgba(255,255,255,0.7);border-radius:12px;padding:10px;">
+          <div style="display:flex;align-items:center;gap:6px;margin-bottom:8px;">
+            <span style="width:8px;height:8px;border-radius:50%;background:#6366f1;flex-shrink:0;"></span>
+            <span style="font-size:9px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:#4a6070;">Zapytanie</span>
+            <span style="font-size:9px;color:#8aa0ac;margin-left:auto;">3</span>
+          </div>
+          <div style="background:white;border-radius:8px;padding:9px 10px;margin-bottom:5px;border-left:3px solid #6366f1;">
+            <div style="font-size:11px;font-weight:600;color:#1c2b32;">Jan Kowalski</div>
+            <div style="font-size:10px;color:#6366f1;margin-top:2px;">6 250 zł</div>
+          </div>
+          <div style="background:white;border-radius:8px;padding:9px 10px;margin-bottom:5px;border-left:3px solid #6366f1;">
+            <div style="font-size:11px;font-weight:600;color:#1c2b32;">Zofia Maj</div>
+            <div style="font-size:10px;color:#6366f1;margin-top:2px;">17 990 zł</div>
+          </div>
+          <div style="background:white;border-radius:8px;padding:9px 10px;border-left:3px solid #6366f1;">
+            <div style="font-size:11px;font-weight:600;color:#1c2b32;">Piotr Lewandowski</div>
+            <div style="font-size:10px;color:#6366f1;margin-top:2px;">4 340 zł</div>
+          </div>
+        </div>
+
+        <!-- WYCENA -->
+        <div style="background:rgba(255,255,255,0.7);border-radius:12px;padding:10px;">
+          <div style="display:flex;align-items:center;gap:6px;margin-bottom:8px;">
+            <span style="width:8px;height:8px;border-radius:50%;background:#8b5cf6;flex-shrink:0;"></span>
+            <span style="font-size:9px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:#4a6070;">Wycena</span>
+            <span style="font-size:9px;color:#8aa0ac;margin-left:auto;">4</span>
+          </div>
+          <div style="background:white;border-radius:8px;padding:9px 10px;margin-bottom:5px;border-left:3px solid #8b5cf6;">
+            <div style="font-size:11px;font-weight:600;color:#1c2b32;">Anna Nowak</div>
+            <div style="font-size:10px;color:#8b5cf6;margin-top:2px;">8 490 zł</div>
+          </div>
+          <div style="background:white;border-radius:8px;padding:9px 10px;margin-bottom:5px;border-left:3px solid #8b5cf6;">
+            <div style="font-size:11px;font-weight:600;color:#1c2b32;">Marek Wiśniewski</div>
+            <div style="font-size:10px;color:#8b5cf6;margin-top:2px;">51 130 zł</div>
+          </div>
+          <div style="background:white;border-radius:8px;padding:9px 10px;border-left:3px solid #8b5cf6;">
+            <div style="font-size:11px;font-weight:600;color:#1c2b32;">Katarzyna Zielińska</div>
+            <div style="font-size:10px;color:#8b5cf6;margin-top:2px;">12 950 zł</div>
+          </div>
+        </div>
+
+        <!-- ZAMÓWIENIE -->
+        <div style="background:rgba(255,255,255,0.7);border-radius:12px;padding:10px;">
+          <div style="display:flex;align-items:center;gap:6px;margin-bottom:8px;">
+            <span style="width:8px;height:8px;border-radius:50%;background:#a855f7;flex-shrink:0;"></span>
+            <span style="font-size:9px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:#4a6070;">Zamówienie</span>
+            <span style="font-size:9px;color:#8aa0ac;margin-left:auto;">5</span>
+          </div>
+          <div style="background:white;border-radius:8px;padding:9px 10px;margin-bottom:5px;border-left:3px solid #a855f7;">
+            <div style="font-size:11px;font-weight:600;color:#1c2b32;">Tomasz Wróbel</div>
+            <div style="font-size:10px;color:#a855f7;margin-top:2px;">34 580 zł</div>
+          </div>
+          <div style="background:white;border-radius:8px;padding:9px 10px;margin-bottom:5px;border-left:3px solid #a855f7;">
+            <div style="font-size:11px;font-weight:600;color:#1c2b32;">Monika Pawlak</div>
+            <div style="font-size:10px;color:#a855f7;margin-top:2px;">12 770 zł</div>
+          </div>
+          <div style="background:white;border-radius:8px;padding:9px 10px;border-left:3px solid #a855f7;">
+            <div style="font-size:11px;font-weight:600;color:#1c2b32;">Joanna Kubiak</div>
+            <div style="font-size:10px;color:#a855f7;margin-top:2px;">9 680 zł</div>
+          </div>
+        </div>
+
+        <!-- REALIZACJA -->
+        <div style="background:rgba(255,255,255,0.7);border-radius:12px;padding:10px;">
+          <div style="display:flex;align-items:center;gap:6px;margin-bottom:8px;">
+            <span style="width:8px;height:8px;border-radius:50%;background:#22c55e;flex-shrink:0;"></span>
+            <span style="font-size:9px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:#4a6070;">Realizacja</span>
+            <span style="font-size:9px;color:#8aa0ac;margin-left:auto;">5</span>
+          </div>
+          <div style="background:white;border-radius:8px;padding:9px 10px;margin-bottom:5px;border-left:3px solid #22c55e;">
+            <div style="font-size:11px;font-weight:600;color:#1c2b32;">Patrycja Górniak</div>
+            <div style="font-size:10px;color:#22c55e;margin-top:2px;">5 670 zł</div>
+          </div>
+          <div style="background:white;border-radius:8px;padding:9px 10px;margin-bottom:5px;border-left:3px solid #22c55e;">
+            <div style="font-size:11px;font-weight:600;color:#1c2b32;">Robert Kowalczyk</div>
+            <div style="font-size:10px;color:#22c55e;margin-top:2px;">17 870 zł</div>
+          </div>
+          <div style="background:white;border-radius:8px;padding:9px 10px;border-left:3px solid #22c55e;">
+            <div style="font-size:11px;font-weight:600;color:#1c2b32;">Maria Pietrzak</div>
+            <div style="font-size:10px;color:#22c55e;margin-top:2px;">7 280 zł</div>
+          </div>
+        </div>
+
+        <!-- MONTAŻ -->
+        <div style="background:rgba(255,255,255,0.7);border-radius:12px;padding:10px;">
+          <div style="display:flex;align-items:center;gap:6px;margin-bottom:8px;">
+            <span style="width:8px;height:8px;border-radius:50%;background:#f97316;flex-shrink:0;"></span>
+            <span style="font-size:9px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:#4a6070;">Montaż</span>
+            <span style="font-size:9px;color:#8aa0ac;margin-left:auto;">3</span>
+          </div>
+          <div style="background:white;border-radius:8px;padding:9px 10px;margin-bottom:5px;border-left:3px solid #f97316;">
+            <div style="font-size:11px;font-weight:600;color:#1c2b32;">Bartosz Wiśniewski</div>
+            <div style="font-size:10px;color:#f97316;margin-top:2px;">23 900 zł</div>
+            <div style="font-size:9px;color:#8aa0ac;margin-top:2px;">🚚 02.07.2026</div>
+          </div>
+          <div style="background:white;border-radius:8px;padding:9px 10px;border-left:3px solid #f97316;">
+            <div style="font-size:11px;font-weight:600;color:#1c2b32;">Iwona Gniadek</div>
+            <div style="font-size:10px;color:#f97316;margin-top:2px;">27 780 zł</div>
+            <div style="font-size:9px;color:#8aa0ac;margin-top:2px;">🚚 14.07.2026</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Zakończone/Odrzucone row -->
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;">
+        <div style="background:rgba(255,255,255,0.5);border-radius:12px;padding:10px;">
+          <div style="display:flex;align-items:center;gap:6px;margin-bottom:8px;">
+            <span style="width:8px;height:8px;border-radius:50%;background:#94a3b8;flex-shrink:0;"></span>
+            <span style="font-size:9px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:#4a6070;">Zakończone</span>
+            <span style="font-size:9px;color:#8aa0ac;margin-left:auto;">8</span>
+          </div>
+          <div style="display:flex;flex-direction:column;gap:4px;">
+            <div style="background:white;border-radius:8px;padding:7px 10px;display:flex;justify-content:space-between;">
+              <span style="font-size:11px;color:#1c2b32;">Alicja Lewandowska</span>
+              <span style="font-size:10px;color:#94a3b8;">19 190 zł</span>
+            </div>
+            <div style="background:white;border-radius:8px;padding:7px 10px;display:flex;justify-content:space-between;">
+              <span style="font-size:11px;color:#1c2b32;">Katarzyna Nowakowska</span>
+              <span style="font-size:10px;color:#94a3b8;">12 420 zł</span>
+            </div>
+          </div>
+        </div>
+        <div style="background:rgba(255,255,255,0.5);border-radius:12px;padding:10px;">
+          <div style="display:flex;align-items:center;gap:6px;margin-bottom:8px;">
+            <span style="width:8px;height:8px;border-radius:50%;background:#ef4444;flex-shrink:0;"></span>
+            <span style="font-size:9px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:#4a6070;">Odrzucone</span>
+            <span style="font-size:9px;color:#8aa0ac;margin-left:auto;">4</span>
+          </div>
+          <div style="display:flex;flex-direction:column;gap:4px;">
+            <div style="background:white;border-radius:8px;padding:7px 10px;display:flex;justify-content:space-between;">
+              <span style="font-size:11px;color:#1c2b32;">Katarzyna Pacholak</span>
+              <span style="font-size:10px;color:#ef4444;">15 050 zł</span>
+            </div>
+            <div style="background:white;border-radius:8px;padding:7px 10px;display:flex;justify-content:space-between;">
+              <span style="font-size:11px;color:#1c2b32;">Mirosław Płocharski</span>
+              <span style="font-size:10px;color:#ef4444;">6 050 zł</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- MOCKUP 3: Konfigurator produktu -->
+  <div class="mockup-frame">
+    <div class="mockup-bar">
+      <div class="mockup-dot"></div><div class="mockup-dot"></div><div class="mockup-dot"></div>
+      <span style="font-size:10px;color:var(--ink3);margin-left:10px;font-family:'DM Sans',sans-serif;">Konfigurator produktu</span>
+    </div>
+    <div style="background:#f4f7f8;border-radius:12px;overflow:hidden;font-family:'DM Sans',sans-serif;">
+
+      <!-- Produkt header -->
+      <div style="background:#1c2b32;padding:12px 18px;display:flex;align-items:center;justify-content:space-between;">
+        <span style="font-size:14px;font-weight:700;color:white;">Roleta rzymska</span>
+        <div style="display:flex;align-items:center;gap:10px;">
+          <span style="background:#849ca6;color:white;border-radius:20px;padding:5px 14px;font-size:12px;font-weight:700;">700 zł</span>
+          <span style="color:#8aa0ac;font-size:16px;">↑</span>
+          <span style="color:#8aa0ac;font-size:16px;">↓</span>
+          <span style="color:#8aa0ac;font-size:14px;">⧉</span>
+          <span style="color:#8aa0ac;font-size:16px;">✕</span>
+        </div>
+      </div>
+
+      <div style="padding:16px 18px;">
+
+        <!-- Typ produktu pills -->
+        <div style="font-size:9.5px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:#8aa0ac;margin-bottom:8px;">Typ produktu</div>
+        <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:18px;">
+          <span style="padding:7px 14px;border-radius:20px;border:1.5px solid #dde5e8;font-size:11px;color:#4a6070;background:white;">Zasłona</span>
+          <span style="padding:7px 14px;border-radius:20px;border:1.5px solid #dde5e8;font-size:11px;color:#4a6070;background:white;">Firana</span>
+          <span style="padding:7px 14px;border-radius:20px;border:1.5px solid #dde5e8;font-size:11px;color:#4a6070;background:white;">Żaluzje</span>
+          <span style="padding:7px 14px;border-radius:20px;border:1.5px solid #22c55e;font-size:11px;color:#15803d;background:#f0fdf4;font-weight:600;">Roleta rzymska</span>
+          <span style="padding:7px 14px;border-radius:20px;border:1.5px solid #dde5e8;font-size:11px;color:#4a6070;background:white;">Szyna KS</span>
+          <span style="padding:7px 14px;border-radius:20px;border:1.5px solid #dde5e8;font-size:11px;color:#4a6070;background:white;">Karnisz elektryczny</span>
+          <span style="padding:7px 14px;border-radius:20px;border:1.5px solid #dde5e8;font-size:11px;color:#4a6070;background:white;">Karnisz Prestige</span>
+          <span style="padding:7px 14px;border-radius:20px;border:1.5px solid #dde5e8;font-size:11px;color:#4a6070;background:white;">Roleta Shadow</span>
+        </div>
+
+        <!-- Wymiary -->
+        <div style="display:flex;align-items:center;gap:10px;margin-bottom:14px;">
+          <div style="width:26px;height:26px;border-radius:50%;background:#1c2b32;color:white;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;flex-shrink:0;">1</div>
+          <span style="font-size:13px;font-weight:700;color:#1c2b32;">Wymiary</span>
+        </div>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:10px;">
+          <div>
+            <div style="font-size:9px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:#8aa0ac;margin-bottom:4px;">Szerokość (cm)</div>
+            <div style="background:white;border:1.5px solid #dde5e8;border-radius:10px;padding:10px 14px;font-size:13px;color:#1c2b32;">90</div>
+          </div>
+          <div>
+            <div style="font-size:9px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:#8aa0ac;margin-bottom:4px;">Wysokość (cm)</div>
+            <div style="background:white;border:1.5px solid #dde5e8;border-radius:10px;padding:10px 14px;font-size:13px;color:#1c2b32;">226</div>
+          </div>
+        </div>
+        <div style="margin-bottom:14px;">
+          <div style="font-size:9px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:#8aa0ac;margin-bottom:4px;">Wysokość nadrpoża (cm) — opcjonalnie</div>
+          <div style="background:white;border:1.5px solid #dde5e8;border-radius:10px;padding:10px 14px;font-size:13px;color:#8aa0ac;">np. 20</div>
+        </div>
+
+        <!-- Tkanina -->
+        <div style="background:white;border:1.5px solid #22c55e;border-radius:10px;padding:10px 14px;margin-bottom:10px;display:flex;align-items:center;justify-content:space-between;">
+          <span style="font-size:10px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:#8aa0ac;">Tkanina</span>
+          <span style="font-size:12px;color:#15803d;font-weight:600;">Rimini · 90 zł/mb</span>
+          <span style="color:#8aa0ac;">▾</span>
+        </div>
+
+        <!-- Kolor -->
+        <div style="margin-bottom:14px;">
+          <div style="font-size:9px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:#8aa0ac;margin-bottom:4px;">Kolor</div>
+          <div style="background:white;border:1.5px solid #dde5e8;border-radius:10px;padding:10px 14px;font-size:13px;color:#1c2b32;">02</div>
+        </div>
+
+        <!-- Podszewka -->
+        <div style="background:white;border:1.5px solid #dde5e8;border-radius:10px;padding:12px 14px;display:flex;align-items:center;gap:10px;">
+          <div style="width:16px;height:16px;border:1.5px solid #dde5e8;border-radius:4px;flex-shrink:0;"></div>
+          <span style="font-size:12px;font-weight:600;color:#1c2b32;">Podszewka</span>
+          <span style="font-size:11px;color:#8aa0ac;">materiał 80 zł/mb + 50% do szycia</span>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
 </div>
 
 <section>
